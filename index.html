@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsiveDesign.css">
+   <link rel="icon" href="img/shubhanshu2.jpg">
+   <title>Shubhanshu Rao - My Portfolio</title>
+   <script src="https://kit.fontawesome.com/6b9872cb6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+      <div class="container">
+         <nav>
+            <!-- <img class="logo" src="img/logo2.png" alt="logo"> -->
+            <a href="#header" ><h1 class="logo">Shubh<span>anshu</span></h1></a>
+            <ul id="sidemenu">
+               <li><a href="#header"> HOME</a></li>
+               <li><a href="#about">ABOUT ME</a></li>
+               <li><a href="#certificates">CERTIFICATES</a></li>
+               <li><a href="#projects">PROJECTS</a></li>
+               <li><a href="#contacts">CONTACTS</a></li>
+               <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <h1>Hi, I'm <span>Shubhanshu Rao</span> </h1>
+            <p>Web Developer</p>
+         </div>
+      </div>
+   </div>
+
+
+   <!---------------About section------------------------> 
+   
+   <div id="about">
+      <div class="container">
+         <div class="row about-row">
+            <div class="about-col-1">
+               <img src="img/shubhanshu1.jpg" alt="Shubhanshu" >
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">ABOUT ME</h1>
+               <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error veniam incidunt, facere eos delectus quidem, earum distinctio porro optio voluptatibus eaque hic corporis nam magni perferendis numquam amet accusamus asperiores.
+               </p>
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>UI/UX Designer</span><br>Designing Web/App Interface</li>
+                     <li><span>Web Development</span><br>Web App Development</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>(2016-2018) High School</span><br> Pandit Deen Dayal Upadhayaya Inter College, Singlamau, Auraiya</li>
+                     <li><span>(2018-2020) Intermidiate</span><br> Shri Radha Krishna Inter College, Katra, Phaphund, Auraiya</li>
+                     <li><span>(2020-2024) B.tech(CSE)</span><br> institute of Engineering & Technology, Khandari Campus, AGRA</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!---------------Certificates section------------------------> 
+
+   <div id="certificates">
+      <div class="container">
+         <!-- <div class="MainCertificate"> -->
+               <div class="heading">
+                  <h1 class="sub-title">CERTIFICATES</h1>
+               </div>
+               <div class="mycertificates">
+                  <img src="img/cer-2.png" alt="Certificate-2">
+                  <img src="img/cer-3.png" alt="Certificate-3">
+               </div>
+         <!-- </div> -->
+      </div>
+   </div>
+
+
+
+   <!---------------Conatct section------------------------> 
+
+ <div id="contacts">
+   <div class="container">
+      <div class="row">
+         <div class="contact-left">
+            <h1 class="sub-title">CONTACT ME</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>shubhanshurav63@gmail.com</p>
+            <p><i class="fas fa-phone -square-alt"></i>+911234567890</p>
+            <div class="social-icons">
+               <a href="#"><i class="fab fa-facebook"></i></a>
+               <a href="#"><i class="fab fa-twitter-square"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-linkdin"></i></a>
+            </div>
+            <a href="img/Resume.jpg" download class="btn btn-2">Download Resume</a>
+         </div>
+         <div class="contact-right">
+            <form action="#">
+               <input type="text" name="Name" placeholder="Your Name" required>
+               <input type="email" name="email" placeholder="Your Email" required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+         </div>
+      </div>
+   </div>
+ </div>
+
+<!---------------Footer section------------------------> 
+
+<div class="copyright">
+   <p>copyright @ 2022<br> Design & Developed by Shubhanshu Rao ✌️❤️</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Uchen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.8) url('img/3.jpg');
+    background-blend-mode:darken;
+    background-size: cover;
+    background-position:center;
+}
+
+.logo{
+    font-size: 0.95rem;
+    color: #ff004f;
+    font-family: cursive;
+    border: 0.3rem solid #ff004f;
+    background-color: rgb(0 0 0);
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    /* width: 2rem; */
+    /* border: 0.2rem solid #a6959b;
+    border-radius: 50%; */
+}
+
+h1 span{
+    color: white;
+    font-family: cursive;
+}
+
+nav{
+    padding: 10px 10%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:rgba(0,0,0,0.5); */
+    /* border-bottom: 0.1rem solid #ff004f; */
+    top: 0;
+    position: sticky;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    background: #ff004f;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-family: cursive;
+    padding: 2rem;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text p{
+    font-family: cursive;
+    padding-left: 2rem;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/* ---------------About section------------------------ */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.container{
+    border-top: 0.2rem solid #ff004f;
+}
+
+.about-col-1{
+    flex-basis: 35%; 
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 1.08rem;
+}
+
+.about-col-2{
+    flex-basis: 60%; 
+    font-size: 20px;
+    background: rgb(30, 26, 63);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 5px white;
+}
+
+.about-col-2 h1{
+    text-align: center;
+}
+
+.about-col-2 .para{ 
+  text-align: justify;
+  font-family: cursive;
+  padding:20px ;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: cursive;
+    /* border-bottom: 0.4rem solid #ff004f; */
+    color: #ff004f;
+}
+
+.tab-titles{
+    padding: 1rem;
+    display: flex;
+}
+
+.tab-links{
+    font-family: cursive;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents{
+    padding: 1rem;
+    display: none;
+}
+
+.tab-contents ul li{
+    font-family: cursive;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    font-family: cursive;
+    color: #b54789;
+    font-size: 14px;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/* ---------------Certificates section------------------------ */
+
+.heading{
+    text-align: center;
+    padding: 1rem;
+}
+
+.mycertificates{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5rem;
+}
+
+.mycertificates img{
+    width: 50%;
+    padding: 1rem;
+    
+}
+
+
+
+
+/* ---------------Conatct section------------------------ */
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    font-family: cursive;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    font-family: cursive;
+    text-decoration: none;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+.btn.btn-2{
+   display: inline-block;
+   background: #ff004f;
+}
+
+.contact-right form{
+   width: 100%;
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+   font-family: cursive;
+}
+
+form .btn-2{
+   padding: 14px 60px;
+   font-size: 18px;
+   margin: 20px;
+   cursor:pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    border-top: 0.2rem solid #ff004f;
+    margin-top: 20px;
+}
+
+.copyright p{
+   font-family: cursive;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+nav .fas{
+    display: none;
+}
+
+
+
+

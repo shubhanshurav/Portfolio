@@ -1,0 +1,116 @@
+@media only screen and (max-width:600px) {
+    /* #header{
+        background-image: url('img/3.jpg');
+    } */
+
+    .header-text{
+        margin-top: 50%;
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    .header-text h1{
+        font-size: 25px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background:#534f51e9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        padding-top: 50px;
+        z-index: 2;
+        height: 100vh;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    
+    .mycertificates{
+        padding: 1.3rem;
+    }
+
+    .mycertificates img{
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .sub-title{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+
+    .contact-left p{
+        font-size: 0.82rem;
+    }
+    
+    .contact-left p i{
+        font-size: 1rem;
+    }
+    
+
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width:890px) {
+
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+        margin: 2rem;
+    }
+
+    .about-col-2{
+        margin: 2rem;
+        font-size: 21px;
+        align-items: center;
+    }
+
+    
+}
