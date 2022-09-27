@@ -1,3 +1,3 @@
 # Portfolio
 
-My Portfolio website- https://github.com/shubhanshurav/Portfolio/blob/main/index.html
+My Portfolio website- shubhanshu-rao-my-portfolio.netlify.app
